@@ -43,7 +43,7 @@ scoredgst.token_comparison(arr1, arr2, 2)
 
 **score** - a score of the match
 
-**score_array** - see a API
+**score_array** - see API
 
 ## API
 
