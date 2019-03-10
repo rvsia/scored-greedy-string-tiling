@@ -26,7 +26,7 @@ def check_matches(matches, n1, n2): # check if matches are not overlaping
 # minimal match - minimal number of tokens in a match
 # treshold (includes) - treshold decides if match should continue
 # compare function - def func(value 1, value 2) returns 0-1 (1 - match, 0 - no match)
-def token_comparison(tokens1,tokens2, minimal_match = 5, treshold = 1, compare_function = compare_words, score_array = False, use_score = False):
+def token_comparison(tokens1, tokens2, minimal_match = 5, threshold = 1, compare_function = compare_words, score_array = False, use_score = False):
     tiles = []
     switched = False
     tokens1_arr = prepare_marks(tokens1)
@@ -49,7 +49,7 @@ def token_comparison(tokens1,tokens2, minimal_match = 5, treshold = 1, compare_f
                         else:
                             score_arr = None
                         comparison_result = compare_tokens(n1, n2, tokens1_arr, tokens2_arr, compare_function)
-                        while comparison_result >= treshold:
+                        while comparison_result >= threshold:
                             sim_result += 1
                             com_result += comparison_result
                             if score_array:
