@@ -2,7 +2,7 @@
 An enhanced version of Greed String Tiling algorithm which allows using custom scoring functions.
 
 * Allows to use a  custom comparison function :sparkles:
-* Allows to use a score system to determine the best match :pencil:
+* Allows to use a scoring system to determine the best match :pencil:
 * Configurable :hammer:
 
 # Install
