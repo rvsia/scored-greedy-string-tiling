@@ -36,24 +36,41 @@ scoredgst.token_comparison(arr1, arr2, 2)
 # => [{'tok_1_pos': 2, 'tok_2_pos': 2, 'length': 3, 'score': 3}]
 ```
 **tok_1_pos** - a position of token in the first array of the match
+
 **tok_2_pos** - a position of token in the second array of the match
+
 **length** - a length of the match
+
 **score** - a score of the match
+
 **score_array** - see a API
 
 ## API
 
 ```python
-def token_comparison(tokens1,tokens2, minimal_match = 5, treshold = 1, compare_function = compare_words, score_array = False, use_score = False)
+def token_comparison(	tokens1,
+			tokens2, 
+			minimal_match = 5,
+			treshold = 1, 
+			compare_function = compare_words, 
+			score_array = False, 
+			use_score = False)
 ```
+
 **tokens1, tokens2** [arrays] - array of tokens (please, use custom preproccesing to obtain these arrays!)
+
 **minimal_match** [integer] - minimal length of a match
+
 **threshold** [number] - decides (based on a return of compare_function) if algorithm should continue comparing a sequence (use with custom functions) (includes the threshold value!)
+
 **compare_function** [function] - a function which takes two inputs (token1 and token2) and returns their similiarity in range 0-1 (0 - different, 1 - the same)
+
 **score_array** [boolean] - will append to the result array scores of each pair in the match
+
 ```python
 [{'tok_1_pos': 2, 'tok_2_pos': 2, 'length': 3, 'score': 3, 'score_array': [1, 1, 1]}]
 ```
+
 **use_score** [boolean] - will use a score to find higher matches (normally, the algorithm will choose the longest match of all, with this option on, it will choose a match with the highest score)
 
 # Todo
