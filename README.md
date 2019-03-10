@@ -51,7 +51,7 @@ scoredgst.token_comparison(arr1, arr2, 2)
 def token_comparison(	tokens1,
 			tokens2, 
 			minimal_match = 5,
-			treshold = 1, 
+			threshold = 1, 
 			compare_function = compare_words, 
 			score_array = False, 
 			use_score = False)
