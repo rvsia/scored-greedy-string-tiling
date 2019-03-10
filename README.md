@@ -23,7 +23,7 @@ arr1 = [
 	'Today', # 5
 ]
 
-arr1 = [
+arr2 = [
 	'Hello', # 0
 	'Jeremiah', # 1
 	'How', # 2
