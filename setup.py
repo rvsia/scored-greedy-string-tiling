@@ -1,9 +1,9 @@
-from setuptools import setup
+import setuptools
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-setup(name='scored-gst-rvsia',
+setuptools.setup(name='scored-gst-rvsia',
       version='0.1',
       description='An enhanced version of Greed String Tiling algorithm which allows using custom scoring functions',
       long_description=long_description,
@@ -12,9 +12,9 @@ setup(name='scored-gst-rvsia',
       author='Richard Vsiansky',
       author_email='r.vsia@seznam.cz',
       license='MIT',
-      packages=setup.find_packages(),
+      packages=setuptools.find_packages(),
       classifiers=[
           "Programming Language :: Python :: 3",
-            "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2",
       ],
       )
