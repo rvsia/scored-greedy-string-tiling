@@ -5,6 +5,10 @@ An enhanced version of Greed String Tiling algorithm which allows using custom s
 * Allows to use a scoring system to determine the best match :pencil:
 * Configurable :hammer:
 
+### Online example
+
+[Here!](https://repl.it/@rvsia/ScoredGSTExample)
+
 # Install
 
 - TODO
